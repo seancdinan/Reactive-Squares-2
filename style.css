@@ -1,0 +1,270 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+/******************* BOX PICTURES ***********************/
+.box-pics {
+	position: absolute;
+	opacity: 0;
+	z-index: 1;
+	transition: 500ms;
+}
+.box-pics:hover {
+	transition: 1s;
+}
+#box1 {
+	top: 0px;
+	left: 0px;
+}
+#box2 {
+	top: 0px;
+	left: 270px;
+}
+#box3 {
+	top: 0px;
+	left: 1350px;
+}
+#box4 {
+	top: 0px;
+	left: 1620px;
+}
+#box5 {
+	top: 270px;
+	left: 0px;
+}
+#box6 {
+	top: 270px;
+	left: 380px;
+}
+#box7 {
+	top: 270px;
+	left: 650px;
+}
+#box8 {
+	top: 270px;
+	left: 1240px;
+}
+#box9 {
+	top: 270px;
+	left: 1510px;
+}
+#box10 {
+	top: 810px;
+	left: 0px;
+}
+#box11 {
+	top: 810px;
+	left: 270px;
+}
+#box12 {
+	top: 540px;
+	left: 380px;
+}
+#box13 {
+	top: 675px;
+	left: 650px;
+}
+#box14 {
+	top: 540px;
+	left: 1240px;
+}
+#box15 {
+	top: 810px;
+	left: 1510px;
+}
+
+#overlay1:hover ~ #box1,
+#overlay2:hover ~ #box2,
+#overlay3:hover ~ #box3,
+#overlay4:hover ~ #box4,
+#overlay5:hover ~ #box5,
+#overlay6:hover ~ #box6,
+#overlay7:hover ~ #box7,
+#overlay8:hover ~ #box8,
+#overlay9:hover ~ #box9,
+#overlay10:hover ~ #box10,
+#overlay11:hover ~ #box11,
+#overlay12:hover ~ #box12,
+#overlay13:hover ~ #box13,
+#overlay14:hover ~ #box14,
+#overlay15:hover ~ #box15 {
+	opacity: 1;
+	filter: blur(1px);
+}
+
+/******************* BACKGROUND PICTURES ***********************/
+.image {
+	position: absolute;
+	height: 1080px;
+	width: 1890px;
+	top: 0px;
+	opacity: 0;
+	z-index: 0;
+	transition: 750ms;
+}
+#default {
+	opacity: 1;
+}
+
+p {
+	position: relative;
+	color: white;
+	font-size: 60px;
+	text-align: center;
+	margin-top: 100px;
+}
+
+.overlay1:hover ~ #default,
+.overlay2:hover ~ #default,
+.overlay3:hover ~ #default,
+.overlay4:hover ~ #default,
+.overlay5:hover ~ #default,
+.overlay6:hover ~ #default, {
+	opacity: 0;
+	transition: 500ms;
+}
+
+#overlay1:hover ~ #image1,
+#overlay2:hover ~ #image2,
+#overlay3:hover ~ #image3,
+#overlay4:hover ~ #image4,
+#overlay5:hover ~ #image5,
+#overlay6:hover ~ #image6,
+#overlay7:hover ~ #image7,
+#overlay8:hover ~ #image8,
+#overlay9:hover ~ #image9,
+#overlay10:hover ~ #image10,
+#overlay11:hover ~ #image11,
+#overlay12:hover ~ #image12,
+#overlay13:hover ~ #image13,
+#overlay14:hover ~ #image14,
+#overlay15:hover ~ #image15 {
+	opacity: 1; 
+}
+
+/******************* OVERLAYS ***********************/
+.overlay1, .overlay2, .overlay3,
+.overlay4, .overlay5, .overlay6 {
+	position: absolute;
+	opacity: 0;
+	z-index: 2;
+	transition: 500ms;
+}
+.overlay1 {
+	height: 270px;
+	width: 270px;
+	background-color: darkcyan;
+}
+.overlay2 {
+	height: 270px;
+	width: 1080px;
+	background-color: blue;
+}
+.overlay3 {
+	height: 540px;
+	width: 380px;
+	background-color: green;
+}
+.overlay4 {
+	height: 270px;
+	width: 380px;
+	background-color: purple;
+}
+.overlay5 {
+	height: 405px;
+	width: 590px;
+	background-color: magenta;
+}
+.overlay6 {
+	height: 540px;
+	width: 270px;
+	background-color: red;
+}
+
+#overlay1 {
+	top: 0px;
+	left: 0px;
+}
+#overlay2 {
+	top: 0px;
+	left: 270px;
+}
+#overlay3 {
+	top: 0px;
+	left: 1350px;
+}
+#overlay4 {
+	top: 0px;
+	left: 1620px;
+}
+#overlay5 {
+	top: 270px;
+	left: 0px;
+}
+#overlay6 {
+	top: 270px;
+	left: 380px;
+}
+#overlay7 {
+	top: 270px;
+	left: 650px;
+}
+#overlay8 {
+	top: 270px;
+	left: 1240px;
+}
+#overlay9 {
+	top: 270px;
+	left: 1510px;
+}
+#overlay10 {
+	top: 810px;
+	left: 0px;
+}
+#overlay11 {
+	top: 810px;
+	left: 270px;
+}
+#overlay12 {
+	top: 540px;
+	left: 380px;
+}
+#overlay13 {
+	top: 675px;
+	left: 650px;
+}
+#overlay14 {
+	top: 540px;
+	left: 1240px;
+}
+#overlay15 {
+	top: 810px;
+	left: 1510px;
+}
+
+#overlay1:hover, #overlay2:hover, #overlay3:hover, #overlay4:hover, #overlay5:hover, 
+#overlay6:hover, #overlay7:hover, #overlay8:hover, #overlay9:hover, #overlay10:hover,
+#overlay11:hover, #overlay12:hover, #overlay13:hover, #overlay14:hover, #overlay15:hover{
+	opacity: 0.6;
+}
+
+.line {
+	/* Line under the text */
+border: none;
+border-top: 7px solid white;
+margin: -50px auto;
+}
+
+.overlay1 .line, .overlay2 .line, .overlay3 .line,
+.overlay4 .line, .overlay5 .line, .overlay6 .line {
+	width: 0px;
+	transition: width 200ms;
+}
+
+.overlay1:hover .line, .overlay2:hover .line, .overlay3:hover .line,
+.overlay4:hover .line, .overlay5:hover .line, .overlay6:hover .line {
+	/*Draw the line */
+	width: 50%;
+	transition: 600ms;
+}
